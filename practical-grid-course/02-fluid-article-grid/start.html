@@ -73,10 +73,20 @@
         .article-grid {
             /* parent element */
 
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 1.5rem;
+
         }
         .article {
             /* child element */
+            display: grid;
+            align-items: start;
 
+        }
+
+        .article__button {
+            align-self: end;
         }
 
 
